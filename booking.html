@@ -180,37 +180,50 @@
 
                     <!-- Updated Form -->
                     <form action="https://formspree.io/f/mgvpjnln" method="POST">
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="name" class="form-control border-0" placeholder="Your Name" style="height: 55px;" required>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" name="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;" required>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <select name="service" class="form-select border-0" style="height: 55px;" required>
-                                    <option selected disabled>Select A Service</option>
-                                    <option value="Oil Change">Oil Change</option>
-                                    <option value="Brake Repair">Brake Repair</option>
-                                    <option value="Diagnostic">Diagnostic</option>
-                                    <option value="Quote Request">Call me about a quote</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="date" class="form-control border-0 datetimepicker-input" placeholder="Service Date" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" class="form-control border-0" placeholder="Special Request"></textarea>
-                            </div>
+    <div class="row g-3">
+        <div class="col-12 col-sm-6">
+            <input type="text" name="name" class="form-control border-0" placeholder="Your Name" style="height: 55px;" required>
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="email" name="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;" required>
+        </div>
+        <div class="col-12 col-sm-6">
+            <select name="service" class="form-select border-0" style="height: 55px;" required>
+                <option selected disabled>Select A Service</option>
+                <option value="Oil Change">Oil Change</option>
+                <option value="Brake Repair">Brake Repair</option>
+                <option value="Diagnostic">Diagnostic</option>
+                <option value="Quote Request">Call me about a quote</option>
+            </select>
+        </div>
 
-                            <!-- Redirect After Submit -->
-                            <input type="hidden" name="_next" value="https://elvisllc.github.io/carserv-test/thankyou.html">
+        <!-- Calendar restored -->
+        <div class="col-12 col-sm-6">
+            <div class="date" id="date1" data-target-input="nearest">
+                <input
+                    type="text"
+                    name="date"
+                    class="form-control border-0 datetimepicker-input"
+                    placeholder="Service Date"
+                    data-target="#date1"
+                    data-toggle="datetimepicker"
+                    style="height: 55px;"
+                />
+            </div>
+        </div>
 
-                            <div class="col-12">
-                                <button class="btn btn-secondary w-100 py-3" type="submit">Book Now</button>
-                            </div>
-                        </div>
-                    </form>
+        <div class="col-12">
+            <textarea name="message" class="form-control border-0" placeholder="Special Request"></textarea>
+        </div>
+
+        <input type="hidden" name="_next" value="https://elvisllc.github.io/carserv-test/thankyou.html">
+
+        <div class="col-12">
+            <button class="btn btn-secondary w-100 py-3" type="submit">Book Now</button>
+        </div>
+    </div>
+</form>
+
                     <!-- End Updated Form -->
 
                 </div>
